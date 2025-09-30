@@ -1,3 +1,4 @@
+//DOMContentLoaded 
 document.addEventListener("DOMContentLoaded", function () {
     let cantidadTarjetas = parseInt(prompt("¿Qué cantidad de tarjetas desea mostrar?"));
     if (isNaN(cantidadTarjetas) || cantidadTarjetas > 20) {
@@ -31,3 +32,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+
+//innerText, innerHTML, textContent
+
+/*
+let productDiv = createElement("div");
+productDiv.id="card-1";
+productDiv.innerHTML = `
+
+<h3>Prueba</h3>
+
+`;
+
+insertAdjacentElemet
+*/
