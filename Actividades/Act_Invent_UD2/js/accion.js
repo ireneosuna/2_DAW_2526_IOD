@@ -36,6 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
 //innerText, innerHTML, textContent
 
 /*
+
+window.addEventListener("load", function(event))´{
 let productDiv = createElement("div");
 productDiv.id="card-1";
 productDiv.innerHTML = `
@@ -43,6 +45,11 @@ productDiv.innerHTML = `
 <h3>Prueba</h3>
 
 `;
+document.body.appendChild(productDiv); //opcion 1
 
-insertAdjacentElemet
+document.body.insertAdjacentElemet("afterbegin",productDiv); //opcion 2
+}
+
+
+
 */
