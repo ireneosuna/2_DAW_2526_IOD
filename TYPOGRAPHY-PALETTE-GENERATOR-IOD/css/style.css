@@ -139,8 +139,7 @@ label {
   font-weight: 600;             /* resalta el texto del label */
 }
 
-input, select {
-  padding: 0.5rem;              /* espacio interno */
+input, select {            
   border: 1px solid #ccc;       /* borde gris claro */
   border-radius: 0.25rem;       /* esquinas redondeadas suaves */
   font-size: 1rem;              /* tamaño coherente con body */
