@@ -11,6 +11,13 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap"
+    rel="stylesheet">
+
   <!-- Vinculamos el script principal (aunque esté vacío por ahora) -->
   <script src="js/main.js"></script>
 </head>
@@ -49,7 +56,7 @@
         <figcaption>Imagen de ejemplo para comprobar estilos aplicados.</figcaption>
       </figure>
 
-      <form>
+      <form id="form-nombre">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
         <button type="submit">Enviar</button>
@@ -84,10 +91,10 @@
           <div class="control">
             <label for="font-sans">Familia:</label>
             <select id="font-sans" name="font-sans">
-              <option value='system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif'>Sistema (UI)</option>
-              <option value='"Segoe UI",Roboto,Arial,sans-serif'>Segoe UI / Roboto</option>
-              <option value='Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif'>Inter (si está instalada)
-              </option>
+              <option value="system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif">Sistema (UI)</option>
+              <option value="'Inter', sans-serif">Inter</option>
+              <option value="'Roboto', sans-serif">Roboto</option>
+              <option value="'Merriweather', serif">Merriweather</option>
             </select>
           </div>
 
@@ -100,10 +107,21 @@
               <option value="700" selected>700 (negrita)</option>
             </select>
           </div>
+
+          <div class="control">
+            <label for="font-size">Tamaño:</label>
+            <select id="font-size" name="font-size">
+              <option value="14px">14 px</option>
+              <option value="16px" selected>16 px (por defecto)</option>
+              <option value="18px">18 px</option>
+              <option value="20px">20 px</option>
+              <option value="24px">24 px</option>
+            </select>
+          </div>
         </fieldset>
 
         <div class="actions">
-          <button type="button" id="copy-vars">Copiar variables</button>
+          <button type="button" id="copy-vars">Cambiar valores</button>
           <button type="button" id="reset-vars">Restablecer</button>
         </div>
       </form>
